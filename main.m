@@ -48,7 +48,7 @@ G_small = fspecial('Gaussian', [N_SMALL N_SMALL]);
 
 A = imread('images/swan.jpg');
 A_prime = imread('images/swan-pastel.jpg');
-B = imread('chicago.jpg');
+B = imread('images/chicago.jpg');
 
 % Blur
 % A = imread('images/newflower-src.jpg');

@@ -88,7 +88,7 @@ fprintf('Finding best match...\n\n');
 
 % TODO: doing single scale for quicker testin right now -- remove this
 % line.
-% L = 1;
+L = 1;
 for l = L:-1:1
   fprintf('\nl: %d/%d\n===========\n', l, L);
   % Loop over B'
@@ -123,7 +123,13 @@ for l = L:-1:1
 end
 
 B_prime = ntsc2rgb(B_prime_pyramid{1});
+%fprintf(B_prime);
+
+fprintf('calling imshow(B_prime)');
 imshow(B_prime);
+fprintf('imshow(B_prime) called');
+
+imwrite(B_prime, 'C:\Users\dan\git\image-analogies\output\chicago_2.jpg');
 
 end
 
